@@ -198,47 +198,5 @@ contra textos de ataque:
   aparece desplazamiento en lugar de aplastar las gráficas.
 * El tiempo medido **no incluye** el tiempo que la ventana usa para refrescarse.
 
----
 
-## 8. Guía rápida para la demostración en clase
 
-1. `python main.py` → **1. Cargar datos** → **Seleccionar archivo…** y elegir tu archivo de
-   1,000 (TXT) y luego el de 5,000 (XLSX). «Caso del examen» muestra ✓.
-2. **2. Ordenar**: *Interno → QuickSort → Ascendente* → **Ordenar datos**. Mostrar la
-   gráfica antes/después, los primeros/últimos 20 y el total. Repetir con
-   *Externo → Mezcla Equilibrada → Descendente*.
-3. **3. Buscar**: buscar un valor con Binaria y luego **Comparar los 3 métodos**
-   (comparaciones: n vs log n vs 1).
-4. **4. Comparar**: **Ejecutar comparación** y explicar la tabla de recomendaciones.
-5. **5. Reporte final**: mostrar que el botón del PDF solo se habilitó al terminar,
-   **Guardar archivo ordenado** (TXT/XLSX) y **Generar reporte final PDF**.
-6. **Intercalación**: cargar en A y B dos archivos ordenados que guardaste antes.
-7. **Laboratorio de rendimiento**: **Ejecutar laboratorio** y explicar el exponente b
-   (n² contra n log n) y la tabla «Recomendación comprobada» (5 de 5).
-8. Uso de librerías propias: abrir `interfaz.py` y mostrar los `from librerias import ...`.
-
----
-
-## 9. Lista de verificación contra el PDF del examen
-
-| Pide el examen | Estado |
-|---|---|
-| Leer 1 archivo de 1000 y 1 de 5000 enteros, en TXT y XLSX | ✔ el usuario elige su archivo; validación completa |
-| Reutilizar librerías propias de ordenamiento internos y externos | ✔ 7 internos + 3 externos en `librerias/` |
-| Búsqueda secuencial y binaria (y hash en el punto C) | ✔ las tres, con tabla hash propia |
-| Corrección de código defectuoso (índices, recursividad, intercambio, archivos, búsquedas) | Va en el reporte PDF de entrega (error, corrección y explicación de cada fragmento) |
-| A) Cargar TXT o XLSX | ✔ |
-| B) Ordenar eligiendo algoritmo y asc/desc | ✔ interno o externo |
-| C) Buscar con secuencial, binaria o hash | ✔ |
-| D) Primeros 20, últimos 20 y total | ✔ |
-| E) Guardar archivo ordenado, tiempo y algoritmo | ✔ TXT/XLSX con metadatos + reporte PDF |
-| 6) Tabla de algoritmo recomendado por escenario | ✔ y comprobada con el laboratorio |
-| Restricciones: sin `.sort()`, `sorted()` ni bibliotecas de ordenamiento | ✔ verificado por prueba automática (análisis del código) |
-| Repositorio: código, librerías, README, instrucciones | ✔ listo para subir (`.gitignore` incluido) |
-| Reporte PDF de entrega (portada, introducción, desarrollo, resultados, conclusiones) | Lo redacta el alumno; el programa aporta capturas (`capturas/`) y el reporte de resultados en PDF |
-
-**Nota sobre librerías:** para ordenar y buscar solo se usan las librerías propias.
-Además de `os`, `time` y `openpyxl` (permitidas), el programa usa `tkinter` (interfaz
-gráfica, incluida en Python) y `matplotlib` (solo para **dibujar** gráficas y el PDF;
-no ordena nada). Si el profesor no las permitiera, el núcleo (`librerias/`) funciona
-igual sin ellas.
