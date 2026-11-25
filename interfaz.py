@@ -1,14 +1,5 @@
 """
 INTERFAZ GRAFICA - Sistema de Procesamiento y Ordenamiento Masivo de Datos
-
-Usa tkinter (incluido en Python) y matplotlib para las graficas.
-Toda la logica vive en las librerias propias de la carpeta "librerias";
-esta interfaz solo las IMPORTA y las usa (reutilizacion real).
-
-Flujo del proceso (barra lateral):
-    1. Cargar datos  ->  2. Ordenar  ->  3. Buscar  ->  4. Comparar
-    ->  5. Reporte final (el boton del PDF se habilita solo al completar 1-4)
-Herramientas adicionales: Laboratorio de rendimiento e Intercalacion de archivos.
 """
 
 import os
